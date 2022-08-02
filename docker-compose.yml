@@ -5,6 +5,8 @@ services:
       context: ./server
       dockerfile: Dockerfile.server
     container_name: websocket_server
+    stdin_open: true
+    tty: true
     ports:
       - "8080:8080"
     volumes:
